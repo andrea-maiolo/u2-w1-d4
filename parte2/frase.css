@@ -8,3 +8,64 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main div {
+  width: 600px;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+.parole {
+  display: flex;
+  flex-direction: column;
+}
+
+.parole i:first-of-type {
+  display: inline-block;
+  animation: ruota 4s linear infinite;
+}
+
+.parole i:nth-of-type(2) {
+  display: inline-block;
+  opacity: 0;
+  animation: ruota 4s 4s linear infinite;
+}
+
+.parole i:last-of-type {
+  display: inline-block;
+  opacity: 0;
+  animation: ruota 4s 8s linear infinite;
+}
+
+@keyframes ruota {
+  from {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  25% {
+    translate: 0;
+    color: blue;
+    opacity: 0.5;
+  }
+
+  50% {
+    translate: 0;
+    color: blue;
+    opacity: 1;
+  }
+
+  75% {
+    translate: 0;
+    color: blue;
+    opacity: 0.5;
+  }
+
+  to {
+    translate: 0 20px;
+    opacity: 0;
+  }
+}
