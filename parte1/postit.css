@@ -1,0 +1,43 @@
+.container {
+  margin-inline: auto;
+  background-color: #666666;
+  width: 500px;
+  height: 50vh;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.postIt {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+  transition: all 0.5s;
+}
+
+.green {
+  background-color: #cafccb;
+  rotate: 9deg;
+}
+
+.purple {
+  background-color: #c6c6f2;
+  rotate: -11deg;
+}
+
+.yellow {
+  background-color: #fdfdcc;
+  rotate: 5deg;
+}
+
+.postIt:hover {
+  rotate: 0deg;
+  width: 100px;
+  height: 100px;
+}
