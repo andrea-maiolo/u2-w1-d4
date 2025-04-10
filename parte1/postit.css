@@ -18,45 +18,44 @@
   align-items: center;
   text-align: center;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
-  transition: rotate 0.5s, width 0.2s, height 0.2s;
-
-  /* prova per attaccharli */
-  /* transition: attach 3s;
-  opacity: 0;
-  animation: attach 3s ease-in forwards; */
+  transition: rotate 0.5s, width 0.2s, height 0.2s, box-shadow 0.2s;
 }
 
 .green {
   background-color: #cafccb;
   rotate: 9deg;
+  animation: attach 1s linear forwards;
+  opacity: 0;
 }
 
 .purple {
   background-color: #c6c6f2;
   rotate: -11deg;
+  animation: attach 1s 1s linear forwards;
+  opacity: 0;
 }
-
 .yellow {
   background-color: #fdfdcc;
   rotate: 5deg;
+  animation: attach 1s 1.5s linear forwards;
+  opacity: 0;
 }
 
 .postIt:hover {
   rotate: 0deg;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 3px 3px 6px 5px #000;
 }
 
 @keyframes attach {
   from {
     opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+    scale: 2;
   }
 
   to {
     opacity: 1;
-    position: relative;
+    scale: 1;
   }
 }

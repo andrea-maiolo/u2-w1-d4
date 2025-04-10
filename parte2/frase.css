@@ -25,19 +25,19 @@ main div {
 
 .parole i:first-of-type {
   display: inline-block;
-  animation: ruota 4s linear infinite;
+  animation: ruota 12s linear infinite;
 }
 
 .parole i:nth-of-type(2) {
   display: inline-block;
   opacity: 0;
-  animation: ruota 4s 4s linear infinite;
+  animation: ruota 12s linear infinite;
 }
 
 .parole i:last-of-type {
   display: inline-block;
   opacity: 0;
-  animation: ruota 4s 8s linear infinite;
+  /* animation: ruota 12s 8s linear infinite; */
 }
 
 @keyframes ruota {
@@ -69,3 +69,63 @@ main div {
     opacity: 0;
   }
 }
+/* 
+@keyframes ruota2 {
+  from {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  25% {
+    translate: 0;
+    color: blue;
+    opacity: 0.5;
+  }
+
+  50% {
+    translate: 0;
+    color: blue;
+    opacity: 1;
+  }
+
+  75% {
+    translate: 0;
+    color: blue;
+    opacity: 0.5;
+  }
+
+  to {
+    translate: 0 20px;
+    opacity: 0;
+  }
+}
+
+@keyframes ruota3 {
+  from {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  25% {
+    translate: 0;
+    color: blue;
+    opacity: 0.5;
+  }
+
+  50% {
+    translate: 0;
+    color: blue;
+    opacity: 1;
+  }
+
+  75% {
+    translate: 0;
+    color: blue;
+    opacity: 0.5;
+  }
+
+  to {
+    translate: 0 20px;
+    opacity: 0;
+  }
+} */
